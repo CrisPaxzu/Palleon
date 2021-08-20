@@ -2631,6 +2631,26 @@ a.itm_miga{
     &.w_50{
         width: 48%;
     }
+    &.susc{
+        margin: 0;
+        .campo_esp{
+            border-color:transparent;
+            color: #fff;
+            background: rgba(255,255,255,.2);
+            .placeholder(#f4f4f4);
+            font-size: 15px;
+            &:focus{
+                border-color: @color_ter;
+            }
+        }
+        .not_allow{
+            border-color:#CA526F; 
+        }
+        .filled{
+            border-color: @color_sec;
+            color: @color_sec;
+        }
+    }
 }
 
 .campo_esp {
@@ -2654,6 +2674,9 @@ a.itm_miga{
         ~ .etq_campo_esp{
             top: 0;
             color: @color_cua;
+        }
+        ~ .txt_campo_req_esp{
+            display: none;
         }
     }
     &.not_allow{
@@ -3049,4 +3072,319 @@ a.itm_miga{
         line-height: 19px;
         margin: 8px 0;
     }
+}
+
+.cont_top_blog {
+    width: 100%;
+    .flexbox;
+    .flx_wrap(wrap);
+    .flx_just(space-between);
+}
+
+.cont_gen_not_dest {
+    width: 66%;
+    position: relative;
+    display: inline-block;
+    &:hover{
+        .cont_col_inf_not_dest{
+            width: 50%;
+            background: rgba(0,0,0,.8);
+        }
+        .img_not_dest{
+            img{
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+.img_not_dest {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    img{
+        display: block;
+        .img_cover;
+        transition: .8s;
+        
+    }
+}
+
+.cont_col_inf_not_dest {
+    width: 312px;
+    height: 100%;
+    background: rgba(0,0,0,.65);
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.cont_inf_not_dest {
+    width: 220px;
+    box-sizing: border-box;
+    padding: ;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 40px 0;
+    text-align: left;
+    .fecha_not, .categ_not{
+        color: #fff;
+    }
+    .h_not_ {
+        color: #fff;
+    }
+}
+
+.fecha_not {
+    color: #666;
+    width: 100%;
+    font-size: 12px;
+    line-height: 16px;
+    margin: 4px 0;
+    display: inline-block;
+}
+.categ_not{
+    width: 100%;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 4px 0;
+    display: inline-block;
+}
+
+.h_not_ {
+    width: 100%;
+    font-size: 20px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: bold;
+    display: inline-block;
+    margin: 8px 0 0;
+    &:hover{
+        color: @color_sec;
+    }
+}
+
+.autor_not {
+    width: 100%;
+    font-weight: bold;
+    font-size: 14px;
+    color: @color_sec;
+    margin: 16px 0;
+}
+
+.btn_not_dest {
+    margin: 24px 0 0;
+}
+
+.cont_lat_categ_not {
+    width: 32%;
+    background: #fff;
+    padding: 24px 0;
+    text-align: left;
+    position: relative;
+}
+
+.h_categorias_lat_not {
+    width: 100%;
+    font-weight: bold;
+    font-size: 18px;
+    color: #000;
+    text-align: left;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    padding: 16px 5% 16px 12%;
+}
+
+.cont_list_categ_lat_not {
+    width: 95%;
+    box-sizing: border-box;
+    padding: 8px 12px 16px 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    max-height: 410px;
+    &::-webkit-scrollbar{
+        width: 8px;
+    }
+    &::-webkit-scrollbar-trak{
+        border-radius: 6px;
+        background: #f4f4f4;
+    }
+    &::-webkit-scrollbar-thumb{
+        border-radius: 8px;
+        background: @color_ter;
+    }
+}
+
+.itm_categ_lat_not {
+    box-sizing: border-box;
+    padding: 16px 16px 16px 12%;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: left;
+    &.current{
+        background: #F3F7F8;
+        color: @color_cua;
+    }
+    &:hover{
+        color:@color_sec;
+    }
+}
+
+.cont_bot_blog {
+    width: 100%;
+    .flexbox;
+    .flx_wrap(wrap);
+    .flx_just(space-between);
+    margin: 48px 0;
+}
+
+.colum_list_not {
+    width: 66%;
+    position: relative;
+    display: inline-block;
+}
+
+.cont_itm_list_not {
+    width: 100%;
+    background: #fff;
+    .flexbox;
+    .flx_wrap(wrap);
+    margin-bottom: 32px;
+    &:hover{
+        .img_list_not{
+            img{
+                transform:scale(1.08);
+            }
+        }
+    }
+}
+
+.img_list_not {
+    width: 48%;
+    overflow: hidden;
+    img{
+        .img_cover;
+        transition: .8s;
+    }
+}
+
+.inf_itm_list_not {
+    width: 52%;
+    box-sizing: border-box;
+    padding: 24px 5%;
+    text-align: left;
+    .autor_not{
+        margin: 16px 0 0;
+    }
+}
+
+.cont_btn_ant_sig_pag_not {
+    width: 100%;
+    margin-bottom: 48px;
+}
+
+.btn_ant_sig {
+    width: 240px;
+    margin: 16px 0;
+    &.rec{
+        background: transparent;
+        box-sizing: border-box;
+        border: 1px solid @color_ter;
+        color: @color_ter;
+        float: left;
+        &:hover{
+            border-color: @color_sec;
+            color:#fff;  
+        }
+    }
+    &.ant{
+        float: right;
+    }
+}
+
+.blog_lat {
+    width: 32%;
+}
+
+.cont_box_susc {
+    width: 100%;
+    background: url(../images/diseno/04-blog/bg_susc.png) no-repeat center bottom #1B1D1D;
+}
+
+.form_box_susc {
+    width: 90%;
+    max-width: 245px;
+    display: inline-block;
+    padding: 48px 0;
+    text-align: left;
+}
+
+.h_bosx_susc {
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    color: @color_sec;
+    display: inline-block;
+}
+
+.txt_box_susc {
+    font-size: 16px;
+    margin: 8px 0;
+    color: #fff;
+}
+
+.btn_box_susc {
+    width: 100%;
+    margin: 6px 0;
+}
+
+.cont_otr_not_lat {
+    width: 100%;
+    margin: 24px 0;
+    display: inline-block;
+    text-align: left;
+}
+
+.h_otas_not_lat {
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.itm_otra_not_lat {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 16px 24px;
+    border-bottom: 1px solid #ccc;
+    display: inline-block;
+    &:hover{
+        background: #fff;
+        .h_itm_otra_not_lat{
+            color: @color_sec;
+        }
+    }
+    .autor_not{
+        margin: 8px 0;
+    }
+}
+
+.h_itm_otra_not_lat {
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #666;
+}
+
+.btn_otra_not_lat {
+    float: right;
+    font-size: 16px;
+    color:@color_ter;
 }
