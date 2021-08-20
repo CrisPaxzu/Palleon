@@ -1,0 +1,100 @@
+.w_100(){
+    width: 100%;
+    display: inline-block;
+    position: relative;
+}
+.flexbox(){
+    display: flex;
+    display: -webkit-flex;
+}
+.flx_just(@flx_just){
+    justify-content: (@flx_just);
+    -webkit-justify-content: (@flx_just);
+    -moz-justify-content: (@flx_just);
+}
+.flx_al_itm(@flx_al_itm){
+    align-items: @flx_al_itm;
+    -webkit-align-items: @flx_al_itm;
+    -moz-align-items: @flx_al_itm;
+}
+.flx_al_cont(@flx_al_cont){
+    align-content: @flx_al_cont;
+    -webkit-align-content: @flx_al_cont;
+    -moz-align-content: @flx_al_cont;
+}
+.flx_wrap(@flx_wrap){
+    flex-wrap: @flx_wrap;
+    -webkit-flex-wrap: @flx_wrap;
+    -moz-flex-wrap: @flx_wrap;
+}
+.flx_grow(@flx_grow){
+    flex-grow: @flx_grow;
+    -webkit-flex-grow: @flx_grow;
+    -moz-flex-grow: @flx_grow;
+}
+.transition(@val_trans:.3){
+    transition: all (@val_trans * 1s);
+    -webkit-transition: all (@val_trans * 1s);
+    -moz-transition: all (@val_trans * 1s);
+}
+.boxshadow(@ex:0px, @ey:3px, @blur:5px , @alfa:0.3){
+    box-shadow: @ex @ey @blur rgba(0,0,0, @alfa);
+    -webkit-box-shadow: @ex @ey @blur rgba(0,0,0, @alfa);
+    -moz-box-shadow: @ex @ey @blur rgba(0,0,0, @alfa);
+}
+.bradius(@radius){
+    border-radius: @radius;
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+}
+.circulo(){
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+}
+.centrar_ab(){
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;  
+}
+.limit_text(@lines){
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: @lines;
+}
+
+.color_btn(@color_btn:@color_pri;){
+    background: @color_btn;
+    
+}
+.placeholder( @color_ph){
+    &::-webkit-input-placeholder { 
+      color: @color_ph;
+    }
+    &::-moz-placeholder { 
+      color: @color_ph;
+    }
+    &:-ms-input-placeholder { 
+      color: @color_ph;
+    }
+    &:-moz-placeholder { 
+      color: @color_ph;
+    }
+}
+.img_cover(){
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.hover_zs{
+    .transition;
+    &:hover{
+        transform: scale(1.05);
+        .boxshadow(0, 3px, 6px, .2);
+    }
+}
