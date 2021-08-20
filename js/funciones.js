@@ -31,7 +31,21 @@ $(document).ready(function () {
             clickable: true,
         },
     });
+    /* DESPLEGAR respuestas ayuda*/
     
+    $(".btn_preg").click(function(){
+        
+        if($(this).hasClass('active')){
+            $(".btn_preg").removeClass('active');
+            $(".despl_res").slideUp("fast");
+        }else{
+            $(".btn_preg").removeClass('active');
+            $(this).addClass('active');
+            $(".despl_res").slideUp("fast");
+            $(this).next(".despl_res").slideDown("fast");
+        }
+        
+    });
     
     /*CARRUSEL ENTRENADORES*/
     

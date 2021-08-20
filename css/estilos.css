@@ -3539,3 +3539,119 @@ a.itm_miga:hover {
   line-height: 22px;
   text-transform: uppercase;
 }
+.cont_gen_preguntas {
+  width: 100%;
+  position: relative;
+}
+.cont_inf_gen_preg {
+  width: 100%;
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  padding: 40px 0;
+}
+.colum_preg {
+  position: relative;
+  width: 50%;
+  display: inline-block;
+}
+.cont_list_preg {
+  width: 100%;
+  max-width: 640px;
+  float: right;
+  box-sizing: border-box;
+  padding-right: 40px;
+}
+.cont_preg_res {
+  width: 100%;
+  border-bottom: 1px solid #e2e2e2;
+}
+.btn_preg {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 16px 50px 16px 16px;
+  text-align: left;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: bold;
+  position: relative;
+  color: #666;
+  cursor: pointer;
+}
+.btn_preg .material-icons {
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  color: #6850ff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(-90deg);
+  right: 8px;
+}
+.btn_preg.active {
+  color: #000;
+}
+.btn_preg.active .material-icons {
+  transform: translateY(-50%) rotate(0deg);
+}
+.despl_res {
+  width: 100%;
+  background: rgba(84, 194, 185, 0.1);
+  box-sizing: border-box;
+  padding: 32px 8%;
+  text-align: left;
+  display: none;
+  transition: none;
+}
+.despl_res a {
+  color: #54c2b9;
+  text-decoration: underline;
+}
+.cont_img_preg {
+  width: 100%;
+  height: 526px;
+  background: #54c2b9;
+  border-radius: 8px 0 0 0;
+  position: relative;
+  display: inline-block;
+}
+.cont_img_preg:before {
+  width: 145px;
+  height: 178px;
+  left: 0;
+  bottom: -176px;
+  content: "";
+  position: absolute;
+  background: url(../images/diseno/05-preguntas/compl_img_preg.svg) no-repeat left top;
+}
+.img_interrogante {
+  display: inline-block;
+  margin-top: 48px;
+  animation: zoomin 1.5s forwards;
+  transform: scale(0);
+}
+@keyframes zoomin {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.cont_cta_preg_ {
+  width: 90%;
+  max-width: 400px;
+  float: left;
+  margin: 64px 0 64px 20%;
+  text-align: left;
+}
+.txt_cta_preg {
+  width: 100%;
+  margin: 16px 0;
+}
+.cta_preg {
+  margin: 0;
+}
