@@ -17,6 +17,21 @@ $(document).ready(function () {
     $('.menu_pri li .material-icons').click(function(){
         $(this).next('.submenu_prin').slideToggle('fast');
     });
+    /*BANNER HOME*/
+    
+    var swiper = new Swiper('.crrusel_cursos_entrena_equipo .swiper-container', {
+        autoplay: {
+            delay: 6000,
+        },
+        speed:1000,
+        slidesPerView:3,
+        slidesPerGroup:3,
+        pagination: {
+            el: ".crrusel_cursos_entrena_equipo .swiper-pagination",
+            clickable: true,
+        },
+    });
+    
     
     /*CARRUSEL ENTRENADORES*/
     

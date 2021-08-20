@@ -273,7 +273,7 @@
     display: inline-block;
     margin: 16px;
     text-align: center;
-    font-weight: 500;
+    font-weight: bold;
     cursor: pointer;
     overflow: hidden;
     position: relative;
@@ -320,6 +320,7 @@
         color: #fff;
         text-align: center;
         z-index: 1;
+        font-weight: bold;
     }
 }
 
@@ -2627,6 +2628,9 @@ a.itm_miga{
     position: relative;
     margin: 12px 0;
     display: inline-block;
+    &.w_50{
+        width: 48%;
+    }
 }
 
 .campo_esp {
@@ -2640,7 +2644,10 @@ a.itm_miga{
     font-size: 16px;
     color: #666;
     background: transparent;
-    
+    &.area{
+        height:66px;
+        padding: 8px 16px;
+    }
     &.filled{
         border-color: @color_cua;
         color: @color_cua;
@@ -2700,4 +2707,91 @@ a.itm_miga{
         margin-left: 0;
         margin-right: 0;
     }
+}
+
+.crrusel_cursos_entrena_equipo {
+    width: 100%;
+    .itm_cur_dest{
+        width: 95%;
+        display: inline-block;
+    }
+    .swiper-container .swiper-pagination{
+        bottom: 0;
+        display: inline-block;
+        padding: 0 0 16px;
+        position: relative;
+        .swiper-pagination-bullet{
+            background: transparent;
+            box-sizing: border-box;
+            border:1px solid @color_sec;
+            width: 14px;
+            height: 14px;
+            opacity: 1;
+            &.swiper-pagination-bullet-active{
+                background: @color_sec;
+            }
+        }
+        
+    }
+}
+
+
+.cont_btn_catalogo {
+    width: 100%;
+    display: inline-block;
+    margin:0px 0 80px
+}
+
+.btn_ic {
+    span{
+        margin-right:8px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+.cont_gen_form_ent_equipo {
+    width: 100%;
+    background: url(../images/diseno/bg_form_ee_1.png) no-repeat left top, url(../images/diseno/bg_form_ee_2.png) no-repeat right bottom #fff;
+    box-sizing: border-box;
+    padding: 0 0 64px;
+}
+
+.form_ent_equipo {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 56px 0;
+    .flexbox;
+    .flx_just(space-between);
+    .flx_wrap(wrap);
+    .etq_campo_esp{
+        background: #fff;
+    }
+}
+
+.cont_preg_res_ent_eq {
+    width: 100%;
+    margin: 12px 0;
+}
+
+.preg_ent_eq {
+    width: 100%;
+    min-height: 50px;
+    text-align: left;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+    .flexbox;
+    .flx_al_itm(center);
+}
+
+
+
+.cm_preg_res {
+    margin: 4px 0;
+}
+
+.form_en_eq {
+    .flx_just(center);
 }
