@@ -263,7 +263,7 @@ option {
   -webkit-align-items: center;
   line-height: 24px;
 }
-.cont_btn_login_header:hover span {
+.cont_btn_login_header:hover > span {
   color: #7cefe6;
 }
 .nav {
@@ -4061,4 +4061,73 @@ a.itm_miga:hover {
 .cont_cen_signin {
   width: 100%;
   display: inline-block;
+}
+.cont_ingresado {
+  position: relative;
+}
+.cont_ingresado .material-icons,
+.cont_ingresado .label_login_header {
+  cursor: pointer;
+}
+.cont_submenu_ingreso {
+  width: 200px;
+  background: #fff;
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.15));
+  border-radius: 0 0 6px 6px;
+  position: absolute;
+  top: 110%;
+  right: 0;
+  list-style: none;
+  box-sizing: border-box;
+  padding: 0 8px;
+  z-index: 3;
+  transition: none;
+  display: none;
+}
+.cont_submenu_ingreso:hover span {
+  color: #666;
+}
+.cont_submenu_ingreso li {
+  width: 100%;
+  position: relative;
+  border-bottom: 1px solid #ebebeb;
+  text-align: left;
+  font-size: 16px;
+}
+.cont_submenu_ingreso li:last-child {
+  border: none;
+}
+.cont_submenu_ingreso li a {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px 0 8px 32px;
+  display: block;
+  color: #666;
+  position: relative;
+}
+.cont_submenu_ingreso li a span {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-51%);
+  left: 0;
+  color: #666;
+}
+.cont_submenu_ingreso li a:before {
+  content: "";
+  position: absolute;
+  top: 10%;
+  width: 0px;
+  height: 80%;
+  background: #6850ff;
+  left: -8px;
+  transition: all .3s;
+}
+.cont_submenu_ingreso li a:hover {
+  color: #6850ff;
+}
+.cont_submenu_ingreso li a:hover:before {
+  width: 3px;
+}
+.cont_submenu_ingreso li a:hover span {
+  color: #6850ff;
 }

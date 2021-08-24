@@ -17,6 +17,16 @@ $(document).ready(function () {
     $('.menu_pri li .material-icons').click(function(){
         $(this).next('.submenu_prin').slideToggle('fast');
     });
+    
+    /* MENU INGRESO */
+    
+    $('.cont_ingresado').click(function(){
+        
+        $('.cont_submenu_ingreso').slideToggle('fast');
+    });
+    
+    
+    
     /*BANNER HOME*/
     
     var swiper = new Swiper('.crrusel_cursos_entrena_equipo .swiper-container', {

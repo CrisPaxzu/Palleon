@@ -141,7 +141,7 @@
         line-height: 24px;
     }
     &:hover{
-        span{
+        > span{
             color:@color_sec;
         }
     }
@@ -4110,4 +4110,76 @@ a.itm_miga{
 .cont_cen_signin {
     width: 100%;
     display: inline-block;
+}
+
+.cont_ingresado {
+    position: relative;
+    .material-icons, .label_login_header{
+        cursor: pointer;
+    }
+}
+
+.cont_submenu_ingreso {
+    width: 200px;
+    background: #fff;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.15));
+    border-radius: 0 0 6px 6px;
+    position: absolute;
+    top: 110%;
+    right: 0;
+    list-style: none;
+    box-sizing: border-box;
+    padding: 0 8px;
+    z-index: 3;
+    transition: none;
+    display: none;
+    &:hover{
+        span{
+            color: #666;
+        }
+    }
+    li{
+        width: 100%;
+        position: relative;
+        border-bottom: 1px solid #ebebeb;
+        text-align: left;
+        font-size: 16px;
+        &:last-child{
+            border: none;
+        }
+        a{
+            width: 100%;
+            box-sizing: border-box;
+            padding: 8px 0 8px 32px;
+            display: block;
+            color:#666;
+            position: relative;
+            span{
+               position: absolute;
+                top: 50%;
+                transform: translateY(-51%);
+                left: 0;
+                color: #666;
+            }
+            &:before{
+                content: "";
+                position: absolute;
+                top: 10%;
+                width: 0px;
+                height: 80%;
+                background: @color_ter;
+                left: -8px;
+                transition: all .3s;
+            }
+            &:hover{
+                color: @color_ter;
+                &:before{
+                    width: 3px;
+                }
+                span{
+                    color: @color_ter;
+                }
+            }
+        }
+    }
 }

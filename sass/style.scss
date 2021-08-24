@@ -1,0 +1,365 @@
+// ESTILOS INTERNA LOGIN
+
+.section_login{
+    width: 100%;
+    padding: 48px 0;
+    background: url(../images/diseno/bg_test_1.png) no-repeat left bottom, url(../images/diseno/bg_test_2.png) no-repeat bottom right;
+    background-color: #E5E5E5;
+    background-blend-mode: multiply;
+    margin-top: -44px;
+    padding: 40px 0 100px;
+
+    h2{
+        margin-bottom: 30px;
+        font-weight: 600;
+        font-size: 30px;
+        color: #000;
+    }
+}
+.cont_gen_login{
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    background: #FFF;
+    padding: 80px 30px;
+    box-sizing: border-box;
+
+    .form_login{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h3{
+            font-size: 20px;
+            font-weight: 600;
+            color: #54C2B9;
+            text-transform: uppercase;
+        }
+        .txt_form_login{
+            margin:20px auto;
+            max-width: 400px;
+        }
+        .cont_inputs{
+            width: 100%;
+            max-width: 300px;
+            margin: auto;
+
+            label{
+                background: #FFF;
+            }
+        }
+        .link_btn{
+            margin-bottom: 20px;
+            width: max-content;
+            margin: 0 auto 20px;
+
+            &:hover{
+                text-decoration: underline;
+                color: #6850FF;
+            }
+        }
+        .btn.btn_form{
+            width: max-content;
+            margin: auto;
+        }
+    }
+}
+.input_field{
+    width: 100%;
+    border: 1px solid #7CEFE6;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    position: relative;
+
+    textarea{
+        height: 100px;
+        width: 100%;
+        padding: 0 16px;
+        box-sizing: border-box;
+        position: relative;
+        padding-top: 10px;
+        text-align: left;
+        
+        &:focus{
+            + label{         
+                    font-size: 12px;
+                    top: -11px;
+                    background: #F3F7F8;
+                    color: #54C2B9;
+            }
+        }
+    
+        &:not(:focus) + label, &:not(:placeholder-shown) + label{
+            font-size: 12px;
+            top: -11px;
+            background: #F3F7F8;
+            color: #54C2B9;
+        }
+    }
+
+    input{
+        height: 35px;
+        width: 100%;
+        padding: 0 16px;
+        box-sizing: border-box;
+    }
+    label{
+        position: absolute;
+        top: 7px;
+        font-size: 14px;
+        color: #7e7e7e;
+        left: 10px;
+        background: transparent;
+        padding: 0 4px;
+        box-sizing: border-box;
+        cursor: text;
+    }
+
+    &:focus-within{
+        input + label{         
+                font-size: 12px;
+                top: -11px;
+                background: #F3F7F8;
+                color: #54C2B9;
+        }
+    }
+
+    &:not(:focus-within) input:not(:placeholder-shown) + label{
+        font-size: 12px;
+        top: -11px;
+        background: #F3F7F8;
+        color: #54C2B9;
+    }
+
+}
+
+// ESTILOS INTERNA MI PERFIL
+
+.profile_section{
+    background: #F3F7F8;
+}
+.cont_dates_profile{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+
+    .profile{
+        width: 100%;
+
+        &.p_photo{
+            max-width: 200px;
+            max-height: 200px;
+            width: 100%;
+            position: relative;
+
+            img{
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 200px;
+                z-index: 1;
+            }
+            .pick_photo{
+                position: absolute;
+                z-index: 2;
+                width: 40px;
+                height: 40px;
+                border-radius: 100px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #6850FF;
+                cursor: pointer;
+                right: 10px;
+                bottom: 10px;
+
+                &::before{
+                    content: '';
+                    background: url('../images/diseno/-perfil/photo-camera.svg')no-repeat center;
+                    height: 18px;
+                    width: 18px;
+                    position: absolute;
+                    inset: 0;
+                    margin: auto;
+                    color: #FFF;
+                    fill: #FFF;
+                }
+            }
+        }
+
+        &.p_dates_inputs{
+            width: 100%;
+
+            .col2_input{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 20px;
+
+                .input_field{
+                    margin-bottom: 12px;
+                }
+            }
+        }
+        &.p_categories{
+            width: 40%;
+
+            h4{
+                margin-bottom: 10px;
+                font-size: 15px;
+                text-align: left;
+            }
+
+            .cont_cat_int{
+                background: #FFF;
+                padding: 10px;
+                box-sizing: border-box;
+                border-radius: 4px;
+                max-height: 167px;
+                height: 100%;
+                overflow-x: hidden;
+                overflow-y: scroll;
+
+                &::-webkit-scrollbar {
+                  width: 8px;
+                  height: 8px;
+                }
+                &::-webkit-scrollbar-button {
+                  width: 0px;
+                  height: 0px;
+                }
+                &::-webkit-scrollbar-thumb {
+                  background: #6850ff;
+                  border: 0px none #ffffff;
+                  border-radius: 100px;
+                }
+                &::-webkit-scrollbar-thumb:active {
+                  background: #000000;
+                }
+                &::-webkit-scrollbar-track {
+                  background: #e9e9e9;
+                  border: 0px none #ffffff;
+                  border-radius: 43px;
+                }
+                &::-webkit-scrollbar-track:active {
+                  background: #333333;
+                }
+                &::-webkit-scrollbar-corner {
+                  background: transparent;
+                }
+
+                div{
+                    display: flex;
+                    justify-content: flex-start;
+                    margin-bottom: 4px;
+
+                    input[type=checkbox]{
+                        appearance: none;
+                        content: '';
+                        border-radius: 100px;
+                        background: #DADADA;
+                        width: 24px;
+                        height: 20px;
+                        position: relative;
+                        margin-left: auto;
+
+                        &:checked::before{
+                                content: '';
+                                position: absolute;
+                                background: url('../images/diseno/-perfil/check.svg')no-repeat center;
+                                background-color: #4FB80F;
+                                width: 20px;
+                                height: 20px;
+                                border-radius: 100px;
+                            }
+                    }
+                    label{
+                        width: 100%;
+                        text-align: left;
+                        cursor: pointer;
+                        margin-left: 20px;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.cont_tit_profile{
+    display: block;
+    margin: 20px 0;
+    position: relative;
+
+    &::before{
+        content: '';
+        position: absolute;
+        border-bottom: 1px solid #D2D2D2;
+        width: 100%;
+        left: 0;
+        top: calc(50%);
+        z-index: 1;
+    }
+    .tits_h2, .tits_h4{
+        position: relative;
+        text-align: left;
+        z-index: 2;
+        background: #F3F7F8;
+        width: max-content;
+        padding: 0 20px 0 0;
+        box-sizing: border-box;
+        font-weight: 400;
+    }
+}
+
+.cont_notas_recomendadas{
+    padding-bottom: 60px;
+
+    .colum_list_cursos{
+        width: 100%;
+        padding: 0;
+
+        .cont_paginas_list_cursos{
+            .itm_curso{
+                width: 23%;
+            }
+        }
+    }
+}
+
+// INTERNA MIS CURSOS
+
+.section_cont_miscursos{
+    width: 100%;
+    .cont_paginas_list_cursos{
+        justify-content: flex-start;
+    }
+}
+.tit_miscursos{
+    position: relative;
+
+    h3{
+        text-align: left;
+        display: block;
+        margin: 20px 0;
+        padding-right: 12px;
+        box-sizing: border-box;
+        position: relative;
+        z-index: 2;
+        color:#282828;
+        background:#F3F7F8;
+        width: max-content;
+        font-weight: 600;
+    }
+
+    &::before{
+        content: '';
+        position: absolute;
+        border-bottom: 1px solid #D2D2D2;
+        width: 100%;
+        left: 0;
+        top: calc(50%);
+        z-index: 1;
+    }
+}
