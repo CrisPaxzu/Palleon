@@ -131,10 +131,10 @@ $(document).ready(function () {
 
 
 
-    /* PESTAÑAS CATEGORIAS SERVICIOS*/
+    /* PESTAÑAS CATEGORIAS MEDIO PAGO*/
     
-    const catg = document.querySelectorAll(".pest_sub_serv");
-    const infCatg = document.querySelectorAll(".subinf_lat_ser");
+    const catg = document.querySelectorAll(".pest_med_pago");
+    const infCatg = document.querySelectorAll(".cont_gen_inf_form_med_pag");
 
     let selectCatg = null;
     

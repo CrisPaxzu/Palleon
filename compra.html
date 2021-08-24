@@ -78,16 +78,166 @@
                     
                     <div class="colum_compra">
                         
-                        <div class="cont_blanco_compra">
+                        <div class="cont_inf_compra">
                             <form class="form_pagos">
                                 <div class="sub_H_compras">DATOS PERSONALES</div>
                                 
-                                <div class="cont_datos_pers_pago"></div>
+                                <div class="cont_datos_pers_pago">
+                                    <div class="cont_campoform_esp w_50">
+                                        <input type="text" class="campo_esp"/>
+                                        <label class="etq_campo_esp">Nombre</label>
+                                        <div class="txt_campo_req_esp">Este campo es requerido</div>
+                                    </div>
+                                    <div class="cont_campoform_esp w_50">
+                                        <input type="text" class="campo_esp"/>
+                                        <label class="etq_campo_esp">Apellido</label>
+                                        <div class="txt_campo_req_esp">Este campo es requerido</div>
+                                    </div>
+                                    <div class="cont_campoform_esp w_50">
+                                        <input type="email" class="campo_esp"/>
+                                        <label class="etq_campo_esp">Email</label>
+                                        <div class="txt_campo_req_esp">Este campo es requerido</div>
+                                    </div>
+                                    <div class="cont_campoform_esp w_50">
+                                        <input type="tel" class="campo_esp"/>
+                                        <label class="etq_campo_esp">Teléfono</label>
+                                        <div class="txt_campo_req_esp">Este campo es requerido</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="sub_H_compras">MEDIO DE PAGO</div>
+                                <div class="txt_med_pago">
+                                    Selecciona el medio de pago y llena los datos
+                                </div>
+                                <div class="col_pest_med_pago">
+                                    <div class="pest_med_pago active" data-cat="cat_1">
+                                        <div class="ic_pest_med_pago">
+                                            <img src="images/diseno/07-compras/ic_pse.png"/>
+                                        </div>
+                                        <div class="etq_pest_med_pago">
+                                            PSE
+                                        </div>
+                                    </div>
+                                    <div class="pest_med_pago" data-cat="cat_2">
+                                        <div class="ic_pest_med_pago">
+                                            <img src="images/diseno/07-compras/ic_tcred.png"/>
+                                        </div>
+                                        <div class="etq_pest_med_pago">
+                                            Tarjeta crédito
+                                        </div>
+                                    </div>
+                                    <div class="pest_med_pago" data-cat="cat_3">
+                                        <div class="ic_pest_med_pago">
+                                            <img src="images/diseno/07-compras/ic_otro.png"/>
+                                        </div>
+                                        <div class="etq_pest_med_pago">
+                                            medio pago
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col_form_med_pago">
+                                    <div class="cont_gen_inf_form_med_pag active_info" data-cat="cat_1">
+                                        <div class="cont_campoform_esp">
+                                            <select class="campo_esp">
+                                                <option></option>
+                                            </select>
+                                            <label class="etq_campo_esp">Tipo de persona</label>
+                                            <div class="txt_campo_req_esp">Este campo es requerido</div>
+                                        </div>
+                                        <div class="cont_campoform_esp">
+                                            <select class="campo_esp">
+                                                <option></option>
+                                            </select>
+                                            <label class="etq_campo_esp">Banco</label>
+                                            <div class="txt_campo_req_esp">Este campo es requerido</div>
+                                        </div>
+                                        <div class="btn">
+                                            <input type="submit" value="Pagar"/>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="cont_gen_inf_form_med_pag" data-cat="cat_2">
+                                        <div class="cont_campoform_esp">
+                                            <input type="tel" class="campo_esp"/>
+                                            <label class="etq_campo_esp">Número de tarjeta</label>
+                                            <div class="txt_campo_req_esp">Este campo es requerido</div>
+                                        </div>
+                                        <div class="cont_campoform_esp">
+                                            <input type="text" class="campo_esp"/>
+                                            <label class="etq_campo_esp">Titular de la tarjeta</label>
+                                            <div class="txt_campo_req_esp">Este campo es requerido</div>
+                                        </div>
+                                        <div class="etq_form_lat_compra">Fecha de vencimiento</div>
+                                        <div class="cont_campoform_esp w_50">
+                                            <select class="campo_esp filled"><!-- class "filled" cuando se llena -->
+                                                <option>Ene</option>
+                                            </select>
+                                            <label class="etq_campo_esp">Mes</label>
+                                            <div class="txt_campo_req_esp">Este campo es requerido</div>
+                                        </div>
+                                        <div class="cont_campoform_esp w_50">
+                                            <select class="campo_esp">
+                                                <option></option>
+                                            </select>
+                                            <label class="etq_campo_esp">Año</label>
+                                            <div class="txt_campo_req_esp">Este campo es requerido</div>
+                                        </div>
+                                        <div class="cont_campoform_esp">
+                                            <input type="tel" class="campo_esp"/>
+                                            <label class="etq_campo_esp">Código de seguridad</label>
+                                            <div class="txt_campo_req_esp">Este campo es requerido</div>
+                                        </div>
+                                        <div class="btn">
+                                            <input type="submit" value="Pagar"/>
+                                        </div>
+                                    </div>
+                                </div>
                             </form>
                         </div>
                     </div>
                     
-                    <div class="column_cont_lat_compra"></div>
+                    <div class="column_cont_lat_compra">
+                        <div class="cont_gen_inf_lat_compra">
+                            <div class="cont_gen_inf_compra">
+                                <div class="img_inf_compra">
+                                    <img src="images/diseno/01-home/cur_dest_3.jpg" alt="" tile=""/>
+                                </div>
+                                <div class="inf_lat_dat_compra">
+                                    <div class="nombre_curso_compra">
+                                        Desafios y Realidades - Digital Sales vs. Field Sales
+                                    </div>
+                                    <div class="item_det_lat_det_curs">
+                                        Precio:
+                                        <span>$90.000</span>
+                                    </div>
+                                    <div class="item_det_lat_det_curs">
+                                        Bono de descuento:
+                                        <span>-$5.000</span>
+                                    </div>
+                                    <div class="item_det_lat_det_curs">
+                                        Total a pagar:
+                                        <div class="total_pagar">
+                                            $85.000
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cont_Gen_bono_pago">
+                                <div class="h_bono">
+                                    BONO DE DESCUENTO
+                                </div>
+                                <form class="fomr_bono">
+                                    <div class="cont_campoform_esp susc">
+                                        <input type="text" class="campo_esp" placeholder="E-mail"/>
+                                        <div class="txt_campo_req_esp">Este campo es requerido</div>
+                                    </div>
+                                    <div class="btn btn_box_susc">
+                                        <input type="" value="Suscribirme"/>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                     
                 </div>
                 

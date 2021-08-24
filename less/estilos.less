@@ -3820,19 +3820,24 @@ a.itm_miga{
 }
 
 .colum_compra {
-    width: 70%;
+    width: 68%;
     box-sizing: border-box;
-    padding-right: 2%;
+    margin-right: 2%;
+    background: #fff;
 }
 
 .column_cont_lat_compra {
     width: 30%;
 }
 
-.cont_blanco_compra {
+.cont_inf_compra {
     width: 100%;
     box-sizing: border-box;
-    padding: 48px 5%;
+    padding: 48px 8%;
+    background: #fff;
+    .etq_campo_esp{
+        background: #fff;
+    }
 }
 
 .sub_H_compras {
@@ -3841,10 +3846,179 @@ a.itm_miga{
     color: @color_cua;
     display: inline-block;
     padding: 16px 0;
+    font-size: 20px;
+    text-align: left;
 }
 
 .cont_datos_pers_pago {
     .flexbox;
     .flx_wrap(wrap);
-    
+    .flx_just(space-between);
+    margin-bottom: 16px;
+}
+
+.txt_med_pago {
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+}
+
+.col_pest_med_pago {
+    width: 40%;
+    float: left;
+    margin: 16px 0;
+}
+
+.pest_med_pago {
+    width: 100%;
+    .flexbox;
+    .flx_al_itm(center);
+    box-sizing: border-box;
+    padding: 12px 16px;
+    cursor: pointer;
+    background: #F3F7F8;
+    border-bottom: 1px solid #fff;
+    &.active{
+        background: #fff;
+        .ic_pest_med_pago{
+            img{
+                filter:grayscale(0);
+                opacity: 1;
+            }
+        }
+        .etq_pest_med_pago{
+            color:@color_cua;
+        }
+    }
+    &:hover{
+        .ic_pest_med_pago{
+            img{
+                filter:grayscale(0);
+                opacity: 1;
+            }
+        }
+        .etq_pest_med_pago{
+            color:@color_cua;
+        }
+    }
+}
+
+.ic_pest_med_pago {
+    width: 35px;
+    min-width: 35px;
+    height: 32px;
+    .flexbox;
+    .flx_al_itm(center);
+    .flx_just(center);
+    img{
+        filter:grayscale(100%);
+        opacity: .5;
+    }
+}
+
+.etq_pest_med_pago {
+    flex-grow: 1;
+    box-sizing: border-box;
+    padding: 0 0 0 10%;
+    text-align: left;
+    color: #a9a9a9;
+}
+
+.form_pagos {
+    display: inline-block;
+}
+
+.col_form_med_pago {
+    width: 60%;
+    box-sizing: border-box;
+    float: right;
+    padding: 16px 8%;
+}
+
+.etq_form_lat_compra {
+    font-size: 16px;
+    width: 100%;
+    text-align: left;
+    display: inline-block;
+    margin: 8px 0 0 ;
+}
+
+.cont_gen_inf_form_med_pag {
+    width: 100%;
+    .flx_just(space-between);
+    .flx_wrap(wrap);
+    display: none;
+    animation: fadein 1s forwards;
+    .cont_campoform_esp{
+        margin:6px 0;
+    }
+    .btn{
+        margin: 16px 0 0;
+    }
+    &.active_info{
+        .flexbox;
+    }
+}
+
+.cont_gen_inf_lat_compra {
+    width: 100%;
+    position: sticky;
+    top: 130px;
+}
+
+.cont_gen_inf_compra {
+    width: 100%;
+    background: #fff;
+    overflow: hidden;
+}
+
+.img_inf_compra {
+    width: 100%;
+    height: 155px;
+    img{
+        .img_cover;
+    }
+}
+
+.inf_lat_dat_compra {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 32px 24px;
+    text-align: left;
+}
+
+.nombre_curso_compra {
+    width: 100%;
+    font-weight: bold;
+    color: #000;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 16px;
+}
+
+.total_pagar {
+    width: 100%;
+    font-size: 30px;
+    font-weight: bold;
+    color: @color_sec;
+}
+
+.cont_Gen_bono_pago {
+    width: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 32px 24px 16px;
+    background: @color_cua;
+    text-align: left;
+    margin: 24px 0 0;
+}
+
+.h_bono {
+    color: #FFF;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.fomr_bono {
+    width: 100%;
 }
