@@ -3977,3 +3977,88 @@ a.itm_miga:hover {
 .fomr_bono {
   width: 100%;
 }
+.cnt_login {
+  background: url(../images/diseno/bg_test_1.png) no-repeat left center, url(../images/diseno/bg_test_2.png) no-repeat center right #f3f7f8;
+}
+.cont_gen_login {
+  width: 100%;
+  max-width: 600px;
+  background: #fff;
+  box-sizing: border-box;
+  padding: 40px 5%;
+  display: inline-block;
+  margin-bottom: 64px;
+}
+.h_ingreso {
+  width: 100%;
+  font-size: 20px;
+  font-weight: bold;
+  color: #54c2b9;
+  margin: 16px 0;
+}
+.cont_cen_login {
+  width: 100%;
+  max-width: 310px;
+  display: inline-block;
+}
+.txt_login {
+  width: 100%;
+  margin: 16px 0;
+}
+.fomr_login {
+  width: 100%;
+  margin: 16px 0;
+}
+.fomr_login .etq_campo_esp {
+  background: #fff;
+}
+.link_olvide_pw {
+  display: inline-block;
+  color: #6850ff;
+  font-size: 16px;
+}
+.cont_registrarse {
+  width: 100%;
+  padding: 32px 0 16px;
+  border-top: 1px solid #ccc;
+  font-size: 16px;
+}
+.cont_registrarse a {
+  font-weight: bold;
+  color: #6850ff;
+}
+.cont_registrarse a:hover {
+  color: #7cefe6;
+}
+.fomr_signin {
+  width: 100%;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+}
+.fomr_signin .etq_campo_esp {
+  background: #fff;
+}
+.fomr_signin .cbt_check_form {
+  justify-content: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+}
+.cont_gen_signin {
+  width: 100%;
+  max-width: 700px;
+  background: #fff;
+  box-sizing: border-box;
+  padding: 40px 5%;
+  display: inline-block;
+  margin-bottom: 64px;
+}
+.cont_cen_signin {
+  width: 100%;
+  display: inline-block;
+}
