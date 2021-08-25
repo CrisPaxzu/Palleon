@@ -21,6 +21,17 @@
 </head>
 
 <body>
+    <div class="cont_gen_buscador">
+        <div class="cont_form_buscador">
+            <div class="cerrar_buscador">
+                <span class="material-icons">cancel</span>
+            </div>
+            <form class="form_buscador">
+                <input type="search" class="campo_buscar"/>
+                <input type="submit" class="boton_buscador" value=""/>
+            </form>
+        </div>
+    </div>
     <header class="header interna">
         <div class="cont_central">
             <h1 class="logo_princ">
@@ -29,6 +40,15 @@
                 </a>
             </h1>
             <div class="cont_gen_men_header">
+                
+                <div class="btn_menu_movil">
+                    <span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </div>
+                
                 <div class="cont_top_header">
                     <div class="btn_buscador_header">
                         <span class="material-icons">search</span>
@@ -37,14 +57,21 @@
                         <span class="material-icons">person_outline</span>
                         <span class="label_login_header">Ingresar/registrarme</span>
                     </a>
-                </div>
-                
-                <div class="btn_menu_movil">
-                    <span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </span>
+                    <div class="cont_btn_login_header cont_ingresado" style="display: none;">
+                        <span class="material-icons">person_outline</span>
+                        <span class="label_login_header">Cristian García</span>
+                        <ul class="cont_submenu_ingreso">
+                            <li><a href="">Perfil</a></li>
+                            <li><a href="">Mis cursos</a></li>
+                            <li><a href="">Certificaciones</a></li>
+                            <li>
+                                <a href="">
+                                    <span class="material-icons-outlined">power_settings_new</span>
+                                    Cerrar sessón
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 
                 <nav class="nav">
@@ -139,87 +166,6 @@
                                 </div>
                             </div>
                         </div>
-                        
-                        <div class="cont_gen_comentarios">
-                            <div class="h_comentarios">Lo que opinan de este  curso</div>
-                            
-                            <div class="cont_list_coments">
-                                <div class="cont_itm_coment">
-                                    <div class="img_perfil_coment">
-                                        <!-- sin imagen de perfil -->
-                                    </div>
-                                    <div class="cont_inf_coments">
-                                        <div class="nombre_coments">Cristian García</div>
-                                        <div class="fecha_coments">12/10/2021</div>
-                                        <div class="txt_coments">
-                                           Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley 
-                                        </div>
-                                        <div class="cont_st_valoracion val_4"> 
-                                            <div class="str_val"></div>
-                                            <div class="str_val"></div>
-                                            <div class="str_val"></div>
-                                            <div class="str_val"></div>
-                                            <div class="str_val"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="cont_itm_coment">
-                                    <div class="img_perfil_coment">
-                                        <img src="images/diseno/img_perfil.jpg"/>
-                                    </div>
-                                    <div class="cont_inf_coments">
-                                        <div class="nombre_coments">Andrea Vélez</div>
-                                        <div class="fecha_coments">12/10/2021</div>
-                                        <div class="txt_coments">
-                                           Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley 
-                                        </div>
-                                        <div class="cont_st_valoracion val_4"> 
-                                            <div class="str_val"></div>
-                                            <div class="str_val"></div>
-                                            <div class="str_val"></div>
-                                            <div class="str_val"></div>
-                                            <div class="str_val"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="cont_itm_coment">
-                                    <div class="img_perfil_coment">
-                                        <!-- sin imagen de perfil -->
-                                    </div>
-                                    <div class="cont_inf_coments">
-                                        <div class="nombre_coments">Cristian García</div>
-                                        <div class="fecha_coments">12/10/2021</div>
-                                        <div class="txt_coments">
-                                           Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley 
-                                        </div>
-                                        <div class="cont_st_valoracion val_4"> 
-                                            <div class="str_val"></div>
-                                            <div class="str_val"></div>
-                                            <div class="str_val"></div>
-                                            <div class="str_val"></div>
-                                            <div class="str_val"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="cot_btn_carga_coments">
-                                <div class="btn_cargar_coments">
-                                    Ver más comentarios
-                                </div>
-                            </div>
-                            
-                            <div class="cont_gen_comparte">
-                                <div class="etq_comparte">Comparte este curso</div>
-                                <div class="cont_redes_comparte">
-                                    <div class="btn_red_comparte ic_fb"></div>
-                                    <div class="btn_red_comparte ic_in"></div>
-                                    <div class="btn_red_comparte ic_tw"></div>
-                                    <div class="btn_red_comparte ic_ig"></div>
-                                    <div class="btn_red_comparte ic_wa"></div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                     
                     <div class="column_cont_lat_curso_detalles">
@@ -241,11 +187,13 @@
                                 Duración:
                                 <span>12 horas</span>
                             </div>
-                            <div class="precio_atn_curst_det">
-                                $180.000
-                            </div>
-                            <div class="precio_act_curs_det">
-                                $90.000
+                            <div class="w_100">
+                                <div class="precio_atn_curst_det">
+                                    $180.000
+                                </div>
+                                <div class="precio_act_curs_det">
+                                    $90.000
+                                </div>
                             </div>
                             
                             <div class="btn btn_compra_lat">
@@ -284,6 +232,87 @@
                             
                             <!--  -->
                             
+                        </div>
+                    </div>
+                    
+                    <div class="cont_gen_comentarios">
+                        <div class="h_comentarios">Lo que opinan de este  curso</div>
+
+                        <div class="cont_list_coments">
+                            <div class="cont_itm_coment">
+                                <div class="img_perfil_coment">
+                                    <!-- sin imagen de perfil -->
+                                </div>
+                                <div class="cont_inf_coments">
+                                    <div class="nombre_coments">Cristian García</div>
+                                    <div class="fecha_coments">12/10/2021</div>
+                                    <div class="txt_coments">
+                                       Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley 
+                                    </div>
+                                    <div class="cont_st_valoracion val_4"> 
+                                        <div class="str_val"></div>
+                                        <div class="str_val"></div>
+                                        <div class="str_val"></div>
+                                        <div class="str_val"></div>
+                                        <div class="str_val"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cont_itm_coment">
+                                <div class="img_perfil_coment">
+                                    <img src="images/diseno/img_perfil.jpg"/>
+                                </div>
+                                <div class="cont_inf_coments">
+                                    <div class="nombre_coments">Andrea Vélez</div>
+                                    <div class="fecha_coments">12/10/2021</div>
+                                    <div class="txt_coments">
+                                       Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley 
+                                    </div>
+                                    <div class="cont_st_valoracion val_4"> 
+                                        <div class="str_val"></div>
+                                        <div class="str_val"></div>
+                                        <div class="str_val"></div>
+                                        <div class="str_val"></div>
+                                        <div class="str_val"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cont_itm_coment">
+                                <div class="img_perfil_coment">
+                                    <!-- sin imagen de perfil -->
+                                </div>
+                                <div class="cont_inf_coments">
+                                    <div class="nombre_coments">Cristian García</div>
+                                    <div class="fecha_coments">12/10/2021</div>
+                                    <div class="txt_coments">
+                                       Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley 
+                                    </div>
+                                    <div class="cont_st_valoracion val_4"> 
+                                        <div class="str_val"></div>
+                                        <div class="str_val"></div>
+                                        <div class="str_val"></div>
+                                        <div class="str_val"></div>
+                                        <div class="str_val"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cot_btn_carga_coments">
+                            <div class="btn_cargar_coments">
+                                Ver más comentarios
+                            </div>
+                        </div>
+
+                        <div class="cont_gen_comparte">
+                            <div class="etq_comparte">Comparte este curso</div>
+                            <div class="cont_redes_comparte">
+                                <div class="btn_red_comparte ic_fb"></div>
+                                <div class="btn_red_comparte ic_in"></div>
+                                <div class="btn_red_comparte ic_tw"></div>
+                                <div class="btn_red_comparte ic_ig"></div>
+                                <div class="btn_red_comparte ic_wa"></div>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -1505,6 +1505,7 @@ a.itm_miga{
 .cont_columns_detalle_curso {
     .flexbox;
     width: 100%;
+    .flx_wrap(wrap);
 }
 
 .colum_detalle_curso {
@@ -4256,6 +4257,7 @@ a.itm_miga{
 .boton_buscador {
     width: 50px;
     height: 50px;
+    min-width: 50px;
     border-radius: 0 4px 4px 0;
     cursor: pointer;
     background: url(../images/diseno/ic_lupa.svg) no-repeat center #fff;
@@ -4516,6 +4518,82 @@ a.itm_miga{
     .btn_ic_peq{
         min-width: inherit;
     }
+    .cont_gen_detalle_curso{
+        width: 90%;
+    }
+    .h_nombre_curso_detalle{
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .lateral_curso_detalles{
+        top: 80px;
+        padding: 24px 8%;
+    }
+    .img_coach_curs_det{
+        width: 60px;
+        height: 60px;
+        min-width: 60px;
+    }
+    .cont_inf_coach_lat_curs_det{
+        padding-bottom: 16px;
+    }
+    .inf_coach_det_curs{
+        span{
+            line-height: 19px;
+        }
+    }
+    .item_det_lat_det_curs{
+        font-size: 14px;
+        line-height: 18px;
+        margin: 4px 0;
+    }
+    .precio_atn_curst_det{
+        margin: 8px 0;
+    }
+    .precio_act_curs_det{
+        font-size: 25px;
+        line-height: 28px;
+    }
+    .btn_compra_lat{
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .curso_tuyo{
+        font-size: 14px;
+        margin: 8px 0;
+    }
+    .cont_gen_estado_curso_det{
+        margin: 8px 0;
+    }
+    .img_detalle_curso{
+        height: 280px;
+    }
+    .cont_espe_detalle_curso{
+        padding: 8px 32px 32px;
+    }
+    .txt_espc_detalle_curso{
+        font-size: 15px;
+        ul {
+            li{
+                font-size: 15px;
+            }
+        }
+    }
+    .num_sesion{
+        width: 100%;
+    }
+    .desc_sesion{
+        width: 100%;
+        padding: 0;
+        font-size: 15px;
+    }
+    .txt_coments{
+        font-size: 15px;
+    }
+    .itm_otros_crs {
+        width: 31.33%;
+        margin: 0 1%;
+    }
 }
 @media screen and (max-width:768px){
     .btn{
@@ -4616,6 +4694,22 @@ a.itm_miga{
     }
     .itm_curso{
         width: 48%;
+    }
+
+    .cont_columns_detalle_curso{
+        flex-wrap: wrap;
+    }
+    .colum_detalle_curso{
+        width: 100%;
+        padding: 0;
+    }
+    .column_cont_lat_curso_detalles{
+        width: 100%;
+        margin-top: 24px;
+    }
+    .item_det_lat_det_curs{
+        width: auto;
+        margin-right: 16px;
     }
 }
 @media screen and (max-width:480px){
@@ -4732,5 +4826,9 @@ a.itm_miga{
     .btn_ic_peq{
         font-size: 14px;
         line-height: 16px;
+    }
+    .h_nombre_curso_detalle{
+        font-size: 20px;
+        line-height: 25px;
     }
 }
