@@ -1,5 +1,19 @@
 $(document).ready(function () {
     
+    /* BUSCADOR*/
+    
+    
+    $('.btn_buscador_header').click(function(){
+        if($('.cont_gen_buscador').hasClass('active')){
+            $('.cont_gen_buscador').removeClass('active');
+        }else{
+            $('.cont_gen_buscador').addClass('active');
+        }
+    });
+    
+    $('.cerrar_buscador').click(function(){
+        $('.cont_gen_buscador').removeClass('active');
+    });
     
     /*btn_movil*/
     
@@ -61,6 +75,17 @@ $(document).ready(function () {
     
     var swiper = new Swiper(".cont_list_entrenadores_home .swiper-container", {
          slidesPerView:4,
+        breakpoints:{
+            1050:{
+                slidesPerView:3,
+            },
+            768:{
+                slidesPerView:2,
+            } ,
+            480:{
+                slidesPerView:1,
+            }
+        },
         pagination: {
             el: ".cont_list_entrenadores_home .swiper-pagination",
             clickable: true,
@@ -70,6 +95,14 @@ $(document).ready(function () {
     
      var swiper = new Swiper(".carrusel_testm .swiper-container", {
          slidesPerView:3,
+         breakpoints:{
+            768:{
+                slidesPerView:2,
+            } ,
+            480:{
+                slidesPerView:1,
+            } 
+        },
         navigation: {
           nextEl: ".carrusel_testm .swiper-button-next",
           prevEl: ".carrusel_testm .swiper-button-prev",
@@ -79,6 +112,17 @@ $(document).ready(function () {
     
      var swiper = new Swiper(".carrusel_clientes .swiper-container", {
          slidesPerView:5,
+         breakpoints:{
+            1050:{
+                slidesPerView:4,
+            },
+            768:{
+                slidesPerView:3,
+            } ,
+            480:{
+                slidesPerView:2,
+            } 
+        },
         navigation: {
           nextEl: ".carrusel_clientes .swiper-button-next",
           prevEl: ".carrusel_clientes .swiper-button-prev",

@@ -187,7 +187,7 @@ option {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 10;
+  z-index: 15;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
   padding: 16px 0;
 }
@@ -458,6 +458,7 @@ option {
 .elem_banner {
   position: absolute;
   z-index: 3;
+  pointer-events: none;
 }
 .elem_banner.el_izq {
   bottom: -40px;
@@ -4151,15 +4152,82 @@ a.itm_miga:hover {
 .cont_submenu_ingreso li a:hover span {
   color: #6850ff;
 }
+.cont_gen_buscador {
+  width: 100%;
+  height: 100%;
+  background: rgba(84, 194, 185, 0.9);
+  box-sizing: border-box;
+  padding: 40px 5%;
+  position: fixed;
+  top: 0;
+  left: -110%;
+  z-index: 30;
+  opacity: 0;
+}
+.cont_gen_buscador.active {
+  left: 0;
+  opacity: 1;
+}
+.cont_form_buscador {
+  width: 80%;
+  max-width: 500px;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.cerrar_buscador {
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  cursor: pointer;
+  height: 24px;
+}
+.cerrar_buscador span {
+  color: #fff;
+}
+.cerrar_buscador:hover {
+  transform: rotate(180deg);
+}
+.form_buscador {
+  width: 100%;
+  display: flex;
+  display: -webkit-flex;
+}
+.campo_buscar {
+  height: 50px;
+  flex-grow: 1;
+  border: 1px solid #fff;
+  border-radius: 4px 0 0 4px;
+  background: transparent;
+  box-sizing: border-box;
+  padding: 0 16px;
+  color: #fff;
+  font-size: 16px;
+}
+.boton_buscador {
+  width: 50px;
+  height: 50px;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  background: url(../images/diseno/ic_lupa.svg) no-repeat center #ffffff;
+}
+.boton_buscador:hover {
+  background-color: #6850ff;
+}
 @media screen and (max-width: 1050px) {
   .header {
     background: #000;
-    padding: 8px 0;
+    padding: 8px 0 0;
   }
   .header.smaller .logo_princ {
     width: 60px;
     height: 50px;
     background-size: 60px 50px;
+  }
+  .header.smaller .nav {
+    margin: 0;
   }
   .header .cont_central {
     width: 100%;
@@ -4229,6 +4297,9 @@ a.itm_miga:hover {
   .btn_menu_movil.active > span span:last-child {
     transform: rotate(-45deg) translate(31%, -144%);
   }
+  .cont_gen_men_header {
+    margin-top: 4px;
+  }
   .btn_buscador_header {
     width: 40px;
     height: 40px;
@@ -4247,7 +4318,7 @@ a.itm_miga:hover {
   }
   .nav {
     position: fixed;
-    top: 0;
+    top: -105%;
     margin: 0;
     box-sizing: border-box;
     padding-right: 40px;
@@ -4256,6 +4327,9 @@ a.itm_miga:hover {
     max-width: 500px;
     background: #000;
     right: 0;
+  }
+  .nav.active {
+    top: 0;
   }
   .menu_prin {
     flex-wrap: wrap;
@@ -4274,5 +4348,209 @@ a.itm_miga:hover {
     width: 100%;
     display: block;
     border-bottom: 1px solid #333;
+  }
+  .main {
+    padding-top: 64px;
+  }
+  .cont_gen_banner_home {
+    margin-top: 0;
+  }
+  .img_banner_home {
+    height: 540px;
+  }
+  .h_banner_home {
+    font-size: 40px;
+    line-height: 45px;
+  }
+  .cont_gen_inf_banner_home {
+    top: 45%;
+  }
+  .sec_gris {
+    padding: 25px 0;
+  }
+  .cont_gen_cursos_dest {
+    padding: 28px 0;
+  }
+  .btn {
+    min-width: 150px;
+  }
+  .cont_gen_inf_cur_dest {
+    background: rgba(0, 0, 0, 0.6);
+  }
+  .cont_gen_testimonios {
+    padding: 0;
+  }
+  .cont_list_entrenadores_home .swiper-container {
+    padding: 0;
+  }
+  .cont_gen_verde {
+    padding: 36px 0 50px;
+  }
+  .colm_form_footer {
+    width: 70%;
+    max-width: 520px;
+  }
+  .colum_menu_footer {
+    width: 25%;
+    box-sizing: border-box;
+    padding: 0 2%;
+  }
+  .colum_susc_footer,
+  .column_datos_footer {
+    box-sizing: border-box;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .colum_susc_footer {
+    width: 60%;
+    max-width: 400px;
+    padding-left: 0;
+    padding-right: 6%;
+  }
+  .column_datos_footer {
+    width: 40%;
+  }
+  .cont_txt_pie {
+    width: 100%;
+    box-sizing: border-box;
+    border-right: none;
+  }
+  .cont_gen_med_pago {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 24px 0 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .btn {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .cont_banner_home .swiper-container .swiper-pagination {
+    bottom: 40px;
+  }
+  .img_banner_home {
+    height: 360px;
+  }
+  .btn_banner_home {
+    margin: 40px 0 0;
+    padding: 12px 32px;
+  }
+  .elem_banner {
+    display: none;
+  }
+  .cnt_intro_home {
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+  }
+  .cont_bienv_home,
+  .cont_video_bienv {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  .h_banner_home {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .cnt_intro_home {
+    margin-top: -60px;
+  }
+  .cont_vid_bienv_home {
+    height: 50vw;
+  }
+  .cont_video_bienv {
+    padding: 24px 5%;
+  }
+  .h_bienv_home,
+  .h_vid_bienv_home,
+  .h_home {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .cont_benef_home {
+    margin-bottom: 32px;
+  }
+  .itm_ben_home {
+    width: 100%;
+    max-width: inherit;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+  }
+  .ic_benf_home {
+    width: 90px;
+    min-width: 90px;
+  }
+  .cont_inf_benf_home {
+    text-align: left;
+    box-sizing: border-box;
+    padding: 0 0 0 24px;
+  }
+  .itm_cur_dest {
+    width: 100%;
+    max-width: 500px;
+  }
+  .cont_gen_testimonios {
+    background-image: none;
+  }
+  .colum_susc_footer,
+  .column_datos_footer {
+    width: 100%;
+    padding: 12px 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .img_banner_home {
+    height: 250px;
+  }
+  .h_banner_home {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .btn_banner_home {
+    margin-top: 12px;
+  }
+  .sec_gris {
+    padding: 16px 0;
+  }
+  .ic_benf_home {
+    width: 60px;
+    min-width: 60px;
+    height: auto;
+  }
+  .ic_benf_home imh {
+    max-height: 60px;
+  }
+  .cont_entrenador_home {
+    max-width: 290px;
+    margin: 0 auto;
+  }
+  .elem_coach_home {
+    width: 132%;
+    top: 18%;
+    left: -11%;
+  }
+  .elem_coach_home img {
+    width: 100%;
+  }
+  .etq_med_pago {
+    width: 100%;
+    margin: 0 0 16px;
+    text-align: left;
+  }
+  .colm_form_footer {
+    width: 100%;
+  }
+  .colum_menu_footer {
+    width: 100%;
+    order: 4;
+  }
+  .menu_pie li {
+    width: 49%;
+    box-sizing: border-box;
+    padding: 0 2%;
   }
 }
