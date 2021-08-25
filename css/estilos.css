@@ -357,6 +357,7 @@ option {
 .img_banner_home {
   width: 100%;
   height: 745px;
+  display: block;
 }
 .img_banner_home:before {
   content: "";
@@ -4386,12 +4387,16 @@ a.itm_miga:hover {
   .cont_gen_verde {
     padding: 36px 0 50px;
   }
+  .cont_mid_footer {
+    justify-content: center;
+  }
   .colm_form_footer {
-    width: 70%;
+    width: 60%;
     max-width: 520px;
   }
   .colum_menu_footer {
-    width: 25%;
+    width: 40%;
+    max-width: 220px;
     box-sizing: border-box;
     padding: 0 2%;
   }
@@ -4403,12 +4408,13 @@ a.itm_miga:hover {
   }
   .colum_susc_footer {
     width: 60%;
-    max-width: 400px;
+    max-width: 520px;
     padding-left: 0;
     padding-right: 6%;
   }
   .column_datos_footer {
     width: 40%;
+    max-width: 220px;
   }
   .cont_txt_pie {
     width: 100%;
@@ -4427,7 +4433,7 @@ a.itm_miga:hover {
     line-height: 19px;
   }
   .cont_banner_home .swiper-container .swiper-pagination {
-    bottom: 40px;
+    bottom: 50px;
   }
   .img_banner_home {
     height: 360px;
@@ -4458,6 +4464,13 @@ a.itm_miga:hover {
   }
   .cont_vid_bienv_home {
     height: 50vw;
+  }
+  .logo_bienv_home {
+    width: 90px;
+    height: auto;
+  }
+  .logo_bienv_home img {
+    height: auto;
   }
   .cont_video_bienv {
     padding: 24px 5%;
@@ -4496,15 +4509,28 @@ a.itm_miga:hover {
   .cont_gen_testimonios {
     background-image: none;
   }
-  .colum_susc_footer,
   .column_datos_footer {
+    max-width: inherit;
+  }
+  .cont_inf_itm_prod {
+    width: 80%;
+  }
+  .img_list_prod {
+    height: 370px;
+  }
+  .h_prod_list {
     width: 100%;
-    padding: 12px 0;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .txt_prod_list {
+    margin: 8px 0;
+    line-height: 21px;
   }
 }
 @media screen and (max-width: 480px) {
   .img_banner_home {
-    height: 250px;
+    height: 300px;
   }
   .h_banner_home {
     font-size: 25px;
@@ -4552,5 +4578,20 @@ a.itm_miga:hover {
     width: 49%;
     box-sizing: border-box;
     padding: 0 2%;
+  }
+  .colum_susc_footer,
+  .column_datos_footer {
+    width: 100%;
+    padding: 12px 0;
+  }
+  .column_datos_footer,
+  .colum_menu_footer {
+    max-width: inherit;
+  }
+  .itm_list_prod {
+    width: 100%;
+  }
+  .img_list_prod {
+    height: 290px;
   }
 }
