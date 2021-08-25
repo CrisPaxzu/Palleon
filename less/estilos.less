@@ -4263,7 +4263,9 @@ a.itm_miga{
       background-color: @color_ter;  
     }
 }
-
+.ic_btn_cat_lat{
+    display: none;
+}
 @media screen and (max-width:1050px){
     .header{
         background: #000;
@@ -4462,6 +4464,58 @@ a.itm_miga{
         box-sizing: border-box;
         padding: 24px 0 0;
     }
+    .colum_categ_categ_int {
+        position: fixed;
+        top: 0;
+        left: -280px;
+        z-index: 10;
+        height: 100%;
+        box-sizing: border-box;
+        padding-top: 140px;
+        width: 280px;
+        &.active{
+            left: 0;
+            .cont_gen_categ_surs_int{
+                box-shadow: 2px 4px 8px rgba(0,0,0,.3);
+            }
+        }
+    }
+    .cont_gen_categ_surs_int{
+        height: 100%;
+        position: relative;
+        top: 0;
+        box-sizing: border-box;
+        padding: 16px 0 16px 16px;
+        
+    }
+    .colum_list_cursos{
+        width: 100%;
+    }
+    .ic_btn_cat_lat{
+        width: 40px;
+        height: 40px;
+        background: @color_sec;
+        border-radius: 0 4px 4px 0;
+        display: block;
+        position: absolute;
+        top: 0;
+        right: -40px;
+        box-shadow: 2px 2px 4px rgba(0,0,0,.3);
+        span{
+            color:#FFF;
+            line-height: 40px;
+        }
+    }
+    .menu_lat_categ{
+        max-height: 88%;
+        overflow: auto;
+        li{
+            padding:12px 16px;
+        }
+    }
+    .btn_ic_peq{
+        min-width: inherit;
+    }
 }
 @media screen and (max-width:768px){
     .btn{
@@ -4560,6 +4614,9 @@ a.itm_miga{
         margin: 8px 0;
         line-height: 21px;
     }
+    .itm_curso{
+        width: 48%;
+    }
 }
 @media screen and (max-width:480px){
     .img_banner_home{
@@ -4621,10 +4678,59 @@ a.itm_miga{
     .column_datos_footer, .colum_menu_footer{
         max-width: inherit;
     }
+    .h_internas{
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .cont_colum_curso_int{
+        padding-top:0;
+    }
     .itm_list_prod{
         width: 100%;
     }
+    .itm_curso{
+        margin-bottom: 16px;
+    }
+    .cont_inf_itm_curso{
+        padding: 16px 5%;
+    }
     .img_list_prod{
         height: 290px;
+    }
+    .img_itm_curs{
+        height: 110px;
+    }
+    .etq_nuevo_cursso{
+        font-size: 12px;
+    }
+    .h_itm_curso{
+        font-size: 13px;
+        line-height: 16px;
+    }
+    .txt_itm_curso{
+        display: none;
+    }
+    .desc_curso{
+        top: 70px;
+        right: 5%;
+    }
+    .fila_dato_itm_curso{
+        margin: 4px 0;
+    }
+    .btn_ad_list{
+        margin-top: 8px;
+        span{
+            display:none;
+        }
+    }
+    .fila_dato_act_itm_curso{
+        flex-flow: column;
+    }
+    .btn_ver_itm_curso{
+        margin-top: 16px;
+    }
+    .btn_ic_peq{
+        font-size: 14px;
+        line-height: 16px;
     }
 }

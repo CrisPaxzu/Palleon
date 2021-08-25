@@ -1,7 +1,16 @@
 $(document).ready(function () {
     
-    /* BUSCADOR*/
+    /* CATEGORIAS LATERAL */
     
+    $('.ic_btn_cat_lat').click(function(){
+        if($('.colum_categ_categ_int').hasClass('active')){
+            $('.colum_categ_categ_int').removeClass('active');
+        }else{
+            $('.colum_categ_categ_int').addClass('active');
+        }
+    });
+    
+    /* BUSCADOR*/
     
     $('.btn_buscador_header').click(function(){
         if($('.cont_gen_buscador').hasClass('active')){
