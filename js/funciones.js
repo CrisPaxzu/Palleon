@@ -50,7 +50,7 @@ $(document).ready(function () {
     
     
     
-    /*BANNER HOME*/
+    /*carrusel entrena equipo*/
     
     var swiper = new Swiper('.crrusel_cursos_entrena_equipo .swiper-container', {
         autoplay: {
@@ -59,6 +59,14 @@ $(document).ready(function () {
         speed:1000,
         slidesPerView:3,
         slidesPerGroup:3,
+        breakpoints:{
+            768:{
+                slidesPerView:2,
+            } ,
+            480:{
+                slidesPerView:1,
+            }
+        },
         pagination: {
             el: ".crrusel_cursos_entrena_equipo .swiper-pagination",
             clickable: true,

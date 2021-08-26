@@ -2146,6 +2146,7 @@ a.itm_miga:hover {
 .cont_comp_coach_det {
   border: none;
   padding: 32px 5%;
+  box-sizing: border-box;
 }
 .layer_negro {
   width: 100%;
@@ -4201,6 +4202,7 @@ a.itm_miga:hover {
 }
 .campo_buscar {
   height: 50px;
+  width: 80%;
   flex-grow: 1;
   border: 1px solid #fff;
   border-radius: 4px 0 0 4px;
@@ -4556,6 +4558,21 @@ a.itm_miga:hover {
     width: 31.33%;
     margin: 0 1%;
   }
+  .itm_ent_interna {
+    width: 31.33%;
+  }
+  .btn_h_coach {
+    padding: 6px 16px;
+  }
+  .btn_h_coach span {
+    font-size: 18px;
+  }
+  .pagin_listcurs_apr_indv .itm_curso {
+    width: 31.3%;
+  }
+  .cont_gen_form_ent_equipo {
+    background: #fff;
+  }
 }
 @media screen and (max-width: 768px) {
   .btn {
@@ -4675,6 +4692,31 @@ a.itm_miga:hover {
     width: auto;
     margin-right: 16px;
   }
+  .itm_ent_interna {
+    width: 48%;
+  }
+  .cont_columns_detalle_curso {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .cont_gen_detalle_curso {
+    padding: 0;
+  }
+  .column_img_coach_det {
+    width: 100%;
+    max-width: 287px;
+  }
+  .colum_inf_coach_det {
+    width: 100%;
+    margin: 24px 0;
+  }
+  .pagin_listcurs_apr_indv .itm_curso {
+    width: 48%;
+  }
+  .h_form_modal {
+    font-size: 20px;
+    margin: 8px 0;
+  }
 }
 @media screen and (max-width: 480px) {
   .img_banner_home {
@@ -4736,6 +4778,9 @@ a.itm_miga:hover {
   .colum_menu_footer {
     max-width: inherit;
   }
+  .cnt_item_form_footer.w_half {
+    width: 100%;
+  }
   .h_internas {
     font-size: 20px;
     line-height: 25px;
@@ -4794,5 +4839,69 @@ a.itm_miga:hover {
   .h_nombre_curso_detalle {
     font-size: 20px;
     line-height: 25px;
+  }
+  .itm_ent_interna {
+    margin: 8px 1%;
+  }
+  .itm_ent_interna .img_entrenador {
+    height: 150px;
+  }
+  .itm_ent_interna .cont_inf_entrenador_home {
+    padding: 16px 6%;
+  }
+  .itm_ent_interna .nomb_coach_home {
+    font-size: 14px;
+  }
+  .itm_ent_interna .esp_coach_home {
+    font-size: 14px;
+  }
+  .itm_ent_interna .fila_btn_itm_coach {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .itm_ent_interna .btn_ver_coach {
+    margin-top: 8px;
+  }
+  .itm_curso_dicta_coach_Det {
+    width: 100%;
+  }
+  .cont_redes_comparte {
+    margin: 8px 0;
+  }
+  .txt_inf_coach_det {
+    font-size: 15px;
+  }
+  .foto_coach_modal {
+    width: 90px;
+    min-width: 90px;
+    height: auto;
+  }
+  .nombre_coach_modal,
+  .espec_coach_modal {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .txt_modal_coach {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .colum_campos_coach_modal {
+    width: 100%;
+    margin: 8px 0;
+  }
+  .con_gen_dia_modal_coach {
+    padding: 16px 0;
+  }
+  .etiq_campo_modal_coach {
+    font-size: 14px;
+  }
+  .form_ent_equipo {
+    padding: 24px 0;
+  }
+  .form_ent_equipo .w_50 {
+    width: 100%;
+  }
+  .preg_ent_eq {
+    min-height: inherit;
   }
 }
