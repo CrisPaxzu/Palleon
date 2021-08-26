@@ -379,6 +379,12 @@
   width: 100%;
 }
 
+.section_cont_miscursos .cont_gn_miscursos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .section_cont_miscursos .cont_paginas_list_cursos {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
@@ -414,5 +420,55 @@
   left: 0;
   top: calc(50%);
   z-index: 1;
+}
+
+.m_side_miscursos .cont_gen_categ_surs_int .h_lat_categ {
+  margin-bottom: 0;
+  cursor: pointer;
+}
+
+.m_side_miscursos .cont_gen_categ_surs_int .h_lat_categ .m_subs_categ {
+  list-style: none;
+  padding: 0;
+  font-size: 15px;
+  text-transform: initial;
+  font-weight: 400;
+  display: none;
+}
+
+.m_side_miscursos .cont_gen_categ_surs_int .h_lat_categ .m_subs_categ li {
+  padding: 10px 0px 10px 10px;
+}
+
+.m_side_miscursos .cont_gen_categ_surs_int .h_lat_categ .m_subs_categ li a {
+  display: inline-block;
+  color: #666666;
+}
+
+.m_side_miscursos .cont_gen_categ_surs_int .h_lat_categ .m_subs_categ li a:hover {
+  color: #54C2B9;
+}
+
+.m_side_miscursos .cont_gen_categ_surs_int .h_lat_categ .m_subs_categ li .current {
+  width: 100%;
+  padding: 10px 0 10px 14px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px 0 0 4px;
+  background-color: #F3F7F8;
+  color: #54C2B9;
+}
+
+.m_side_miscursos .cont_gen_categ_surs_int .h_lat_categ .m_subs_categ:first-child {
+  padding: 10px 0 0;
+}
+
+.m_side_miscursos .cont_gen_categ_surs_int .h_lat_categ .m_subs_categ.active_slide_menu_s {
+  display: block;
+}
+
+.m_side_miscursos .cont_gen_categ_surs_int div {
+  border-bottom: 1px solid #EDEDED;
+  padding-bottom: 10px;
 }
 /*# sourceMappingURL=style.css.map */
