@@ -248,3 +248,30 @@ function init() {
     });
 }
 window.onload = init();
+
+
+const btnSideMisCursos = document.querySelectorAll('.m_side_miscursos .h_lat_categ');
+const containerMisCursos = document.querySelectorAll('.colum_list_cursos');
+const slideMenu = document.querySelectorAll('.m_subs_categ');
+let compareCat = null
+
+btnSideMisCursos.forEach((buttonEl) =>{
+    buttonEl.addEventListener('click', (e) =>{
+        buttonEl.classList.remove('active_slide_menu_s');
+        e.currentTarget.classList.toggle('active_slide_menu_s');
+
+        compareCat = buttonEl.dataset.miscursos;
+
+        // CONTAINER
+
+        containerMisCursos.forEach((elContainer) =>{
+            if(elContainer.dataset.miscursos === compareCat){
+                elContainer.classList.add('act_container')
+            }else{
+                elContainer.classList.remove('act_container')
+            }
+        })
+
+        
+    })
+});

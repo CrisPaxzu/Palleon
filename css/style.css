@@ -471,4 +471,12 @@
   border-bottom: 1px solid #EDEDED;
   padding-bottom: 10px;
 }
+
+.cont_colum_curso_int .colum_list_cursos {
+  display: none;
+}
+
+.cont_colum_curso_int .colum_list_cursos.act_container {
+  display: block;
+}
 /*# sourceMappingURL=style.css.map */

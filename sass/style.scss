@@ -417,3 +417,13 @@
         }
     }
 }
+.cont_colum_curso_int{
+    .colum_list_cursos{
+        display: none;
+    
+        &.act_container{
+            display: block;
+        }
+    }
+
+}
