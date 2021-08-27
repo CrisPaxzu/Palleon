@@ -1,4 +1,12 @@
 // ESTILOS INTERNA LOGIN
+:root{
+    --col_card1:#6850FF;
+    --col_card2:#5529B5;
+    --col_card3:#934ADC;
+    --col_card4:#6C1B89;
+    --col_card5:#2A4AF2;
+    --col_card6:#0D6BC2;
+}
 
 .section_login{
     width: 100%;
@@ -426,4 +434,56 @@
         }
     }
 
+}
+
+// INTERNA MNIS CURSOS SECCION AGENDA
+
+.cont_agendado{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    .cont_desc_agendado{
+        position: relative;
+        background-color:var(--col_card1);
+        .desc_info_agenda{
+            display: flex;
+            padding: 20px;
+            box-sizing: border-box;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+            .nombre_info_a{
+                width: 100%;
+                min-width: 240px;
+                color: #FFF;
+                h4{
+                    font-weight: 600;
+                    font-size: 16px;
+                }
+                span{
+                    font-weight: 400;
+                    font-size: 15px;
+                }
+            }
+            .desc_txt_info_a{
+                image-rendering: 100%;
+                color: #FFF;
+            }
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            left: -20px;
+            width: 20px;
+            height: 100%;
+            border-top: 100px solid transparent;
+            border-right: 20px solid var(--col_card1);
+            
+        }
+        &.color2{
+            background-color:var(--col_card2);
+            &::before{
+                border-right: 20px solid var(--col_card2);
+            }
+        }
+    }
 }
