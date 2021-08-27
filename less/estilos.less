@@ -4505,6 +4505,7 @@ a.itm_miga{
         top: 0;
         right: -40px;
         box-shadow: 2px 2px 4px rgba(0,0,0,.3);
+        text-align: center;
         span{
             color:#FFF;
             line-height: 40px;
@@ -4651,6 +4652,44 @@ a.itm_miga{
     .itm_metd{
         width: 48%;
     }
+    .cont_itm_list_not{
+        margin-bottom: 16px;
+    }
+    .cont_list_categ_lat_not{
+        max-height: 300px;
+    }
+    .itm_categ_lat_not{
+        font-size: 15px;
+        padding: 12px 16px 12px 12%;
+        border-bottom: 1px solid #F3F7F8;
+    }
+    .h_not_{
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .inf_itm_list_not {
+        .autor_not{
+            margin-top: 8px;
+        }
+        .btn_not_dest{
+            margin-top: 8px;
+        }
+    }
+    .btn_ant_sig{
+        min-width: inherit;
+        width: auto;
+    }
+    .itm_otra_not_lat {
+        padding: 8px 0;
+        .autor_not{
+            margin: 0;
+        }
+    }
+    .h_itm_otra_not_lat{
+        font-size: 14px;
+        line-height: 16px;
+    }
+    
 }
 @media screen and (max-width:768px){
     .btn{
@@ -4799,6 +4838,134 @@ a.itm_miga{
         width: 90%;
         max-width: 500px
     }
+    .cont_gen_inf_esperar_quienes{
+        width: 100%;
+    }
+    .img_esperar_quienes{
+        display: none;
+    }
+    .itm_metd{
+        width: 100%;
+    }
+    .ic_metd{
+        img{
+            width:80px;
+        }
+    }
+    .cont_lat_categ_not{
+        width: 280px;
+        position: fixed;
+        top: 100px;
+        right: -280px;
+        height: ~"calc(100% - 100px)";
+        z-index: 3;
+        padding-top: 0;
+        &.active{
+            box-shadow: -2px 2px 4px rgba(0,0,0,.3);
+            right: 0;
+        }
+    }
+    .ic_btn_lat_blog {
+        right: inherit;
+        left: -40px;
+        border-radius: 4px 0 0 4px;
+        box-shadow: -2px 2px 4px rgba(0,0,0,.3);
+    }
+    .cont_list_categ_lat_not{
+        max-height: 80%;
+    }
+    .cont_gen_not_dest{
+        width: 100%;
+    }
+    .img_not_dest{
+        height: auto;
+    }
+    .cont_col_inf_not_dest{
+        position: relative;
+        width: 100%;
+        padding: 16px 8%;
+        background: #fff;
+        height: auto;
+    }
+    .cont_inf_not_dest{
+        position: relative;
+        max-width: inherit;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0;
+        .fecha_not, .categ_not, .h_not_{
+            color: #000;
+        }
+        .autor_not{
+            margin: 0;
+        }
+    }
+    .btn_not_dest{
+        font-size: 15px;
+        padding: 8px 24px;
+        min-width: inherit;
+        line-height: 18px;
+        margin-top: 16px;
+    }
+    .cont_bot_blog{
+        margin: 24px 0;
+    }
+    .colum_list_not{
+        width: 100%;
+    }
+    .blog_lat{
+        width: 100%;
+    }
+    .cont_box_susc{
+        background-size: cover;
+    }
+    .inf_itm_list_not{
+        padding: 16px 5%;
+    }
+    .h_not_{
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .autor_not{
+        font-size: 12px;
+    }
+    .h_not_int {
+        line-height: 26px;
+        font-size: 24px;
+    }
+    .autor_not_int{
+        font-size: 14px;
+    }
+    .cont_inf_not_int{
+        font-size: 15px;
+        padding: 24px 5%;
+        .cont_gen_comparte{
+            padding: 24px 0 16px 
+        }
+        .cont_redes_comparte{
+            width: 100%;
+            margin: 6px 0 0 0;
+        }
+    }
+    .btn_ant_sig_not{
+        &.ant{
+            padding-left: 35px;
+        }
+        &.sig{
+            padding-right: 35px;
+        }
+        .flecha_ant_sig{
+            width: 28px;
+            height: 28px;
+            line-height: 28px;
+            font-size: 23px;
+        }
+    }
+    .h_ant_sig_not {
+        font-size: 12px;
+        line-height: 14px;
+    }
+    
 }
 @media screen and (max-width:480px){
     .img_banner_home{
@@ -5004,4 +5171,43 @@ a.itm_miga{
     .preg_ent_eq{
         min-height: inherit;
     }
+    .cont_gen_img_quienes{
+        width: 100%;
+        position: relative;
+        height: 200px;
+        &:before{
+            display: none;
+        }
+        .logo_quienes{
+            width: 100px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    }
+    .cont_inf_top_quienes{
+        width: 100%;
+    }
+    .h_quienes{
+        font-size: 20px;
+        line-height: 25px;
+        margin: 8px 0;
+    }
+    .txt_quienes_top{
+        font-size: 15px;
+    }
+    .sub_h_quienes{
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .sub_h_esperar_quienes{
+        font-size: 20px;
+    }
+    .tiempo_lectura{
+        float: left;
+    }
+    .cont_top_int_not{
+        margin-top: 8px;
+    }
 }
+

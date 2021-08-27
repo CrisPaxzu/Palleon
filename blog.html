@@ -21,6 +21,17 @@
 </head>
 
 <body>
+    <div class="cont_gen_buscador">
+        <div class="cont_form_buscador">
+            <div class="cerrar_buscador">
+                <span class="material-icons">cancel</span>
+            </div>
+            <form class="form_buscador">
+                <input type="search" class="campo_buscar"/>
+                <input type="submit" class="boton_buscador" value=""/>
+            </form>
+        </div>
+    </div>
     <header class="header interna">
         <div class="cont_central">
             <h1 class="logo_princ">
@@ -29,6 +40,15 @@
                 </a>
             </h1>
             <div class="cont_gen_men_header">
+                
+                <div class="btn_menu_movil">
+                    <span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </div>
+                
                 <div class="cont_top_header">
                     <div class="btn_buscador_header">
                         <span class="material-icons">search</span>
@@ -37,14 +57,21 @@
                         <span class="material-icons">person_outline</span>
                         <span class="label_login_header">Ingresar/registrarme</span>
                     </a>
-                </div>
-                
-                <div class="btn_menu_movil">
-                    <span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </span>
+                    <div class="cont_btn_login_header cont_ingresado" style="display: none;">
+                        <span class="material-icons">person_outline</span>
+                        <span class="label_login_header">Cristian García</span>
+                        <ul class="cont_submenu_ingreso">
+                            <li><a href="">Perfil</a></li>
+                            <li><a href="">Mis cursos</a></li>
+                            <li><a href="">Certificaciones</a></li>
+                            <li>
+                                <a href="">
+                                    <span class="material-icons-outlined">power_settings_new</span>
+                                    Cerrar sessón
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 
                 <nav class="nav">
@@ -97,6 +124,9 @@
                         </a>
                         
                         <div class="cont_lat_categ_not">
+                            <div class="ic_btn_cat_lat ic_btn_lat_blog">
+                                <span class="material-icons">filter_list</span>  
+                            </div>
                             <div class="h_categorias_lat_not">CATEGORÍAS</div>
                             <div class="cont_list_categ_lat_not">
                                 <div class="itm_categ_lat_not current">

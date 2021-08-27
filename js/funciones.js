@@ -1,6 +1,17 @@
 $(document).ready(function () {
     
-    /* CATEGORIAS LATERAL */
+    
+    /* CATEGORIAS LATERAL BLOG */
+    
+    $('.ic_btn_cat_lat').click(function(){
+        if($('.cont_lat_categ_not').hasClass('active')){
+            $('.cont_lat_categ_not').removeClass('active');
+        }else{
+            $('.cont_lat_categ_not').addClass('active');
+        }
+    });
+    
+    /* CATEGORIAS LATERAL CURSOS */
     
     $('.ic_btn_cat_lat').click(function(){
         if($('.colum_categ_categ_int').hasClass('active')){
