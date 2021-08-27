@@ -22,6 +22,17 @@
 </head>
 
 <body>
+    <div class="cont_gen_buscador">
+        <div class="cont_form_buscador">
+            <div class="cerrar_buscador">
+                <span class="material-icons">cancel</span>
+            </div>
+            <form class="form_buscador">
+                <input type="search" class="campo_buscar"/>
+                <input type="submit" class="boton_buscador" value=""/>
+            </form>
+        </div>
+    </div>
     <header class="header interna">
         <div class="cont_central">
             <h1 class="logo_princ">
@@ -34,10 +45,25 @@
                     <div class="btn_buscador_header">
                         <span class="material-icons">search</span>
                     </div>
-                    <a href="login.html" class="cont_btn_login_header">
+                    <a href="login.html" class="cont_btn_login_header" style="display: none;">
                         <span class="material-icons">person_outline</span>
                         <span class="label_login_header">Ingresar/registrarme</span>
                     </a>
+                    <div class="cont_btn_login_header cont_ingresado">
+                        <span class="material-icons">person_outline</span>
+                        <span class="label_login_header">Cristian García</span>
+                        <ul class="cont_submenu_ingreso">
+                            <li><a href="">Perfil</a></li>
+                            <li><a href="">Mis cursos</a></li>
+                            <li><a href="">Certificaciones</a></li>
+                            <li>
+                                <a href="">
+                                    <span class="material-icons-outlined">power_settings_new</span>
+                                    Cerrar sessón
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 
                 <div class="btn_menu_movil">
@@ -77,23 +103,36 @@
                     
                     <div class="cont_colum_curso_int">
                         
-                        <div class="colum_categ_categ_int">
+                        <div class="colum_categ_categ_int m_side_miscursos">
                             <aside class="cont_gen_categ_surs_int">
-                                <div class="h_lat_categ">CURSOS ADQUIRIDOS</div>
-                                <ul class="menu_lat_categ">
-                                    <li class="current">nuevos cursos adquiridos</li>
-                                    <li>cursos en proceso</li>
-                                    <li>Cursos finalizados</li>
-                                </ul>
-                                <div class="h_lat_categ">MI AGENDA</div>
-                                <div class="h_lat_categ">ENTRENADORES</div>
-                                <div class="h_lat_categ">CATEGORÍAS DE CURSOS</div>
-                                <div class="h_lat_categ">MI LISTA</div>
+                                <div class="h_lat_categ" data-miscursos="1">CURSOS ADQUIRIDOS
+                                    <ul class="menu_lat_categ m_subs_categ active_slide_menu_s">
+                                        <li> <a href="" class="current"> Nuevos cursos adquiridos</a></li>
+                                        <li><a href="">Cursos en proceso</a></li>
+                                        <li><a href="">Cursos finalizados</a></li>
+                                    </ul>
+                                </div>
+                                <div class="h_lat_categ" data-miscursos="2">MI AGENDA</div>
+                                <div class="h_lat_categ" data-miscursos="3">ENTRENADORES</div>
+                                <div class="h_lat_categ" data-miscursos="4">CATEGORÍAS DE CURSOS
+                                    <ul class="menu_lat_categ m_subs_categ">
+                                        <li> <a href=""> Todos los cursos </a></li>
+                                        <li> <a href=""> Transformación </a></li>
+                                        <li> <a href=""> Value messanging</a></li>
+                                        <li> <a href=""> Venta consultiva</a></li>
+                                        <li> <a href=""> Liderazgo de impacto</a></li>
+                                        <li> <a href=""> Comunicaciones de valor</a></li>
+                                        <li> <a href=""> Equipos consistentes</a></li>
+                                        <li> <a href=""> Inteligencia Relacional</a></li>
+                                    </ul>
+                                </div>
+                                <div class="h_lat_categ" data-miscursos="5">MI LISTA</div>
                             </aside>
                         </div>
-                        
-                        <div class="colum_list_cursos">
 
+                        <!-- CONTENEDOR DE CURSOS ADQUIRIDOS -->
+                        
+                        <div class="colum_list_cursos cursos_adquiridos act_container" data-miscursos="1">
                             
                             <div class="cont_paginas_list_cursos" id="pagin_cursos">
                                 
@@ -102,6 +141,57 @@
                                         <h3>Nuevos cursos adquiridos</h3>
                                     </div>
                                     <div class="cont_gn_miscursos">
+                                        <div class="itm_curso">
+                                            <div class="img_itm_curs">
+                                                <div class="etq_nuevo_cursso">NUEVO</div>
+                                                <img src="images/diseno/01-home/cur_dest_3.jpg" alt="" title=""/>
+                                            </div>
+                                            <div class="desc_curso"> -20%</div>
+                                            <div class="cont_inf_itm_curso">
+                                                <div class="h_itm_curso">
+                                                    Desafios y Realidades - Digital Sales vs. Field Sales
+                                                </div>
+                                                <a href="entrenador_interna.html" class="coach_itm_curso">
+                                                    Miguel Lara
+                                                </a>
+                                                <div class="txt_itm_curso">
+                                                    Perfiles de diferentes tipos de vendedores y practicas que suelen manejar. ¿Qué es lo más....
+                                                </div>
+                                                <div class="fila_dato_itm_curso">
+                                                    <span>Duración:</span>
+                                                    12 horas
+                                                </div>
+                                                <div class="fila_dato_itm_curso">
+                                                    <span>Valoración:</span>
+                                                    <div class="cont_st_valoracion val_4"> <!-- clase "val_x" cambia la valoración x=numero de la valoración que muestra-->
+                                                        <div class="str_val"></div>
+                                                        <div class="str_val"></div>
+                                                        <div class="str_val"></div>
+                                                        <div class="str_val"></div>
+                                                        <div class="str_val"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="fila_dato_itm_curso">
+                                                    <div class="precio_anterior">$180.000</div>
+                                                    <div class="precio_actual">$90.000</div>
+                                                </div>
+                                                <div class="fila_dato_itm_curso">
+                                                    <div class="btn_ad_list">
+                                                        <span class="material-icons">playlist_add</span>
+                                                        Agregar a mi lista
+                                                    </div>
+                                                </div>
+                                                <div class="fila_dato_act_itm_curso">
+                                                    <div class="btn btn_ic_peq">
+                                                        <span class="material-icons-outlined">shopping_bag</span>
+                                                        Comprar
+                                                    </div>
+                                                    <a href="curso_detalle.html" class="btn_ver_itm_curso">
+                                                        Ver más
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
                                         <div class="itm_curso">
                                             <div class="img_itm_curs">
                                                 <div class="etq_nuevo_cursso">NUEVO</div>
@@ -434,14 +524,207 @@
                                         </div>
                                     </div>
                                 </div>
-
-                        </div>
+                            </div>
                             
                             <div class="paginacion pags_cursos"></div>
                             
                         </div>
                         
-                        
+                        <!-- CONTENEDOR DE MI AGENDA -->
+            
+                        <div class="colum_list_cursos aside_agenda" data-miscursos="2">
+                            <div class="cont_agendado">
+                                <picture>
+                                    <img src="" alt="">
+                                </picture>
+                                <div class="cont_desc_agendado">
+                                    <div class="desc_info_agenda">
+                                        <div class="nombre_info_a">
+                                            <h4>Alejandra Arias</h4>
+                                            <span>Cargo de la persona</span>
+                                        </div>
+                                        <div class="desc_txt_info_a">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis hic ullam reiciendis error consequuntur assumenda ipsum vitae suscipit neque dolorum.
+                                        </div>
+                                    </div>
+                                    <div class="desc_info_agenda">
+                                        <h4 class="tit_fecha_a">
+                                            Fechas y hora de ingreso próxima:
+                                        </h4>
+                                        <div class="dato_fecha_hora_a">
+                                            05/11/2021 - 8:00 AM a 12:00 PM 
+                                        </div>
+                                        <a class="btn" href=""> <img width="18" src="images/diseno/08-miscursos/icon_camara.svg" alt=""> Link de ingreso</a>
+                                    </div>
+                                    <div class="desc_info_agenda">
+                                        <a href="">Ver certificado <span class="fas fa-arrow-r"></span> </a>
+                                    </div>
+                                </div>
+                                <div class="cont_desc_agendado color2">
+                                    <div class="desc_info_agenda">
+                                        <div class="nombre_info_a">
+                                            <h4>Alejandra Arias</h4>
+                                            <span>Cargo de la persona</span>
+                                        </div>
+                                        <div class="desc_txt_info_a">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis hic ullam reiciendis error consequuntur assumenda ipsum vitae suscipit neque dolorum.
+                                        </div>
+                                    </div>
+                                    <div class="desc_info_agenda">
+                                        <h4 class="tit_fecha_a">
+                                            Fechas y hora de ingreso próxima:
+                                        </h4>
+                                        <div class="dato_fecha_hora_a">
+                                            05/11/2021 - 8:00 AM a 12:00 PM 
+                                        </div>
+                                        <a class="btn" href=""> <img width="18" src="images/diseno/08-miscursos/icon_camara.svg" alt=""> Link de ingreso</a>
+                                    </div>
+                                    <div class="desc_info_agenda">
+                                        <a href="">Ver certificado <span class="fas fa-arrow-r"></span> </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CONTENEDOR ENTRENADORES -->
+
+                        <div class="colum_list_cursos aside_entrenadores" data-miscursos="3">
+                            <div class="cont_tit_profile">
+                                <h4 class="tits_h4">
+                                    Entrenadores
+                                </h4>
+                            </div>
+                            <div class="cont_gen_trainers">
+                                <div class="card_trainer">
+                                    <picture>
+                                        <img src="" alt="">
+                                    </picture>
+                                    <div class="desc_card_trainer c1">
+                                        <h4 class="name_trainer">
+                                            Alejandra Arias
+                                        </h4>
+                                        <h5 class="profile_trainer">
+                                            Nombre especificación
+                                        </h5>
+                                        <div class="cont_calendar_trainer">
+                                            <a href="" class="btn calendar_btn">
+                                                Calendario
+                                            </a>
+                                            <a href="" class="vermas">
+                                                Ver más
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="desc_card_trainer c2">
+                                        <h4 class="name_trainer">
+                                            Alejandra Arias
+                                        </h4>
+                                        <h5 class="profile_trainer">
+                                            Nombre especificación
+                                        </h5>
+                                        <div class="cont_calendar_trainer">
+                                            <a href="" class="btn calendar_btn">
+                                                Calendario
+                                            </a>
+                                            <a href="" class="vermas">
+                                                Ver más
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="desc_card_trainer c3">
+                                        <h4 class="name_trainer">
+                                            Alejandra Arias
+                                        </h4>
+                                        <h5 class="profile_trainer">
+                                            Nombre especificación
+                                        </h5>
+                                        <div class="cont_calendar_trainer">
+                                            <a href="" class="btn calendar_btn">
+                                                Calendario
+                                            </a>
+                                            <a href="" class="vermas">
+                                                Ver más
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="desc_card_trainer c4">
+                                        <h4 class="name_trainer">
+                                            Alejandra Arias
+                                        </h4>
+                                        <h5 class="profile_trainer">
+                                            Nombre especificación
+                                        </h5>
+                                        <div class="cont_calendar_trainer">
+                                            <a href="" class="btn calendar_btn">
+                                                Calendario
+                                            </a>
+                                            <a href="" class="vermas">
+                                                Ver más
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="desc_card_trainer c5">
+                                        <h4 class="name_trainer">
+                                            Alejandra Arias
+                                        </h4>
+                                        <h5 class="profile_trainer">
+                                            Nombre especificación
+                                        </h5>
+                                        <div class="cont_calendar_trainer">
+                                            <a href="" class="btn calendar_btn">
+                                                Calendario
+                                            </a>
+                                            <a href="" class="vermas">
+                                                Ver más
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="desc_card_trainer c6">
+                                        <h4 class="name_trainer">
+                                            Alejandra Arias
+                                        </h4>
+                                        <h5 class="profile_trainer">
+                                            Nombre especificación
+                                        </h5>
+                                        <div class="cont_calendar_trainer">
+                                            <a href="" class="btn calendar_btn">
+                                                Calendario
+                                            </a>
+                                            <a href="" class="vermas">
+                                                Ver más
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CONTENEDOR CATEGORÍAS DE CURSOS -->
+
+                        <div class="colum_list_cursos aside_categorias" data-miscursos="4">
+                            <div class="cont_tit_profile">
+                                <h4 class="tits_h4">
+                                    Todos lo cursos
+                                </h4>
+                            </div>
+                            <div class="cont_categoria_cursos_mc">
+                                AQUI AGREGAR EL DESPLIEGUE DE CURSOS
+                            </div>
+                        </div>
+
+                        <!-- CONTENEDOR MIS LISTAS -->
+
+                        <div class="colum_list_cursos aside_mis_listas" data-miscursos="5">
+                            <div class="cont_tit_profile">
+                                <h4 class="tits_h4">
+                                    Mi lista
+                                </h4>
+                            </div>
+                            <div class="_cont_gen_lista_de_cursos">
+                                AGREGAR LISTA DE CURSOS
+                            </div>
+                        </div>
+
                         <script>
                             /* PAGINACIÓN CURSOS */
                             $(function() {
@@ -460,29 +743,7 @@
                 </div>
             </section>
 
-            <!-- CONTENEDOR DE MI AGENDA -->
             
-            <section class="aside_agenda">
-                
-            </section>
-
-            <!-- CONTENEDOR ENTRENADORES -->
-
-            <section class="aside_entrenadores">
-
-            </section>
-
-            <!-- CONTENEDOR CATEGORÍAS DE CURSOS -->
-
-            <section class="aside_categorias">
-                
-            </section>
-
-            <!-- CONTENEDOR MIS LISTAS -->
-
-            <section class="aside_mis_listas">
-
-            </section>
 
             
 
